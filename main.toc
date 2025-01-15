@@ -1,0 +1,8 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Complex numbers}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Basic arithmetic with complex numbers, and complex conjugates}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Visualising complex numbers}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Exponential form}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Converting between Cartesian and exponential forms}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Visualising arithmetic on complex numbers}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Roots of unity}{6}{subsection.1.6}%
