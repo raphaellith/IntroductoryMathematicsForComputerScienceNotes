@@ -6,3 +6,4 @@
 \contentsline {subsection}{\numberline {1.4}Converting between Cartesian and exponential forms}{4}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Visualising arithmetic on complex numbers}{5}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Roots of unity}{6}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Continuous functions}{9}{section.2}%
