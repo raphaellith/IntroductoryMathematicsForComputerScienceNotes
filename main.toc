@@ -7,3 +7,6 @@
 \contentsline {subsection}{\numberline {1.5}Visualising arithmetic on complex numbers}{5}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Roots of unity}{6}{subsection.1.6}%
 \contentsline {section}{\numberline {2}Continuous functions}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Trigonometric functions}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Exponential and logarithm}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Limits and continuity}{11}{subsection.2.3}%
