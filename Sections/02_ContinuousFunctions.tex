@@ -179,7 +179,7 @@ The plot of \(y = \ln{x}\) is given in figure \ref{fig:Ch02-ln-graph}. Note that
 
 
 
-\subsection{Limits and continuity}
+\subsection{Introduction to limits}
 
 The idea of limits is simple.
 
@@ -194,7 +194,7 @@ This gives us four different cases.
     %
     \[\forall d > 0,\; \exists c > 0,\; x > c \Rightarrow f(x) > d\text{.}\]
     %
-    See figure \ref{fig:Ch02-lim-inf-inf}.
+    See figure \ref{fig:Ch02-lim-inf-inf}. (Restricting \(c\) and \(d\) to positive values is not strictly necessary, but it does make our lives easier in some cases.)
 
     \item As \(x\) approaches a value \(a\), \(f(x)\) approaches infinity. This means that \(f(x)\) can become arbitrarily large for \(x\) close enough \(x\), i.e.
     %
@@ -321,4 +321,148 @@ This gives us four different cases.
     
     \caption{As \(x\) approaches \(a\), \(f(x)\) approaches \(b\).}
     \label{fig:Ch02-lim-val-val}
+\end{figure}
+
+A limit that exists is known as a \textit{finite} limit. Finite limits can be combined in a natural way.
+%
+\begin{align*}
+    \lim_{x \rightarrow a} (f(x) + g(x)) &= \lim_{x \rightarrow a} f(x) + \lim_{x \rightarrow a} g(x)\\
+    \lim_{x \rightarrow a} (f(x) \cdot g(x)) &= \lim_{x \rightarrow a} f(x) \cdot \lim_{x \rightarrow a} g(x)\\
+    \lim_{x \rightarrow a} \frac{f(x)}{g(x)} &= \frac{\lim_{x \rightarrow a} f(x)}{\lim_{x \rightarrow a} g(x)}
+\end{align*}
+
+We use the following rules to handle infinities.
+%
+\begin{align*}
+    a \times \infty &= \infty\\
+    \frac{a}{\infty} &= 0
+\end{align*}
+
+If a limit involves \(x\) approaching zero, we may sometimes have to specify the direction in which \(x\) is approaching it, i.e. whether it is approaching zero as a positive number (from the right) or as a negative number (from the left).
+%
+\begin{align*}
+    \lim_{x \rightarrow 0^+} \frac{1}{x} &= \infty\\
+    \lim_{x \rightarrow 0^-} \frac{1}{x} &= -\infty
+\end{align*}
+
+There are certain cases where we \textit{cannot} combine limits. These are called \textit{indeterminate forms}, and there is no general rule for figuring out what these indeterminate forms evaluate to. Examples of indeterminate forms are given below.
+%
+\[
+\frac{0}{0},\; \frac{\infty}{\infty},\; 0 \times \infty,\; \infty - \infty,\; 0^0,\; 1^\infty,\; \infty^0
+\]
+
+
+
+
+\subsection{Little o and big O notation}
+
+Here we introduce two types of notation: little \(o\) and big \(O\).
+%
+\begin{quote}
+    \textbf{Little \(\mathbf{o}\) notation.}
+
+    We write \(f = o(g)\) near a value \(b\) if \(\lim_{x \rightarrow b} \frac{f(x)}{g(x)} = 0\). This means that \(f\) is negligible when compared with \(g\) (or that \(g\) is more significant than \(f\)) near \(b\).
+    
+    For example, we say that \(x = o(x^2)\) near \(\infty\) because \(\lim_{x\rightarrow \infty} x / x^2 = 0\).
+
+    \vspace{1em}
+
+    \textbf{Big \(\mathbf{O}\) notation.}
+
+    We write \(f = O(g)\) near a value \(b\) if \(\lim_{x \rightarrow b} \left|\frac{f(x)}{g(x)}\right|\) is bounded. We can express the idea of being ``bounded'' more precisely as
+    %
+    \[\exists M \in \mathbb{R},\; \lim_{x \rightarrow b} \left|\frac{f(x)}{g(x)}\right| < M\text{.}\]
+    %
+    This means that \(f\) and \(g\) have a similar growth rate near \(b\).
+
+    For example, we say that \(3x = O(x+1)\) near \(\infty\) because \(\lim_{x \rightarrow \infty} \left|\frac{3x}{x+1}\right| < \frac{3x}{x} = 3\).
+\end{quote}
+%
+Notice that by definition, we have \(f = o(g) \;\Rightarrow\; f = O(g)\). This is because if \(f = o(g)\) is true, then the limit \(\lim_{x \rightarrow b} \frac{f(x)}{g(x)}\) must equal zero and is therefore bounded, which gives us \(f = O(g)\).
+
+
+
+
+
+
+\subsection{Continuity}
+
+A function \(f\) is continuous if for all \(a\) where \(f(a)\) is defined, we have \(\lim_{x\rightarrow a} f(x) = f(a)\).
+
+In practice, this means that the graph of \(y = f(x)\) is a single unbroken curve. The exponential and logarithm functions, for example, are both continuous.
+
+An important result of this is the \textit{intermediate value theorem}.
+%
+\begin{quote}
+    \textbf{Intermediate value theorem.}
+
+    Assume for a continuous function \(f\) that \(a < b\) and \(f(a) < f(b)\). For any value \(y\) such that \(f(a) < y < f(b)\), there exists a (not necessarily unique) value \(x\) such that \(a < x < b\) and \(f(x) = y\).
+\end{quote}
+%
+See figure \ref{fig:Ch02-int-value-thm} and \ref{fig:Ch02-int-value-thm-uniqueness}.
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}
+        \draw[thin,gray!40] (-1,-1) grid (6, 6);
+        \draw[thick, ->, >=latex] (-1,0)--(6,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-1)--(0,6) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+
+        \draw [BrickRed!20, very thick, domain=0:6, samples=100] plot (\x,
+        {sqrt(5*\x)});
+
+        \draw [BrickRed, very thick, domain=1:5, samples=100] plot (\x,
+        {sqrt(5*\x)});
+
+        \filldraw[radius=0.075, MidnightBlue] (1, 2.23) circle;
+        \draw[dashed, MidnightBlue, thick] (1, 0) node[below]{\(a\)} -- (1, 2.23) -- (0, 2.23) node[left]{\(f(a)\)};
+
+        \filldraw[radius=0.075, Fuchsia] (3, 3.87) circle;
+        \draw[dashed, Fuchsia, thick] (3, 0) -- (3, 3.87) -- (0, 3.87);
+
+
+        \filldraw[radius=0.075, MidnightBlue] (5, 5) circle;
+        \draw[dashed, MidnightBlue, thick] (5, 0) node[below]{\(b\)} -- (5, 5) -- (0, 5) node[left]{\(f(b)\)};
+    \end{tikzpicture}
+    
+    \caption{The intermediate value theorem.}
+    \label{fig:Ch02-int-value-thm}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}
+        \draw[thin,gray!40] (-1,-1) grid (6, 7);
+        \draw[thick, ->, >=latex] (-1,0)--(6,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-1)--(0,7) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+
+        \draw [BrickRed!20, very thick, domain=-1:6, samples=100] plot (\x,
+        {sin((2*\x-1) r)+\x+1});
+
+        \draw [BrickRed, very thick, domain=0.5:5, samples=100] plot (\x,
+        {sin((2*\x-1) r)+\x+1});
+
+        \filldraw[radius=0.075, MidnightBlue] (0.5, 1.5) circle;
+        \draw[dashed, MidnightBlue, thick] (0.5, 0) node[below]{\(a\)} -- (0.5, 1.5) -- (0, 1.5) node[left]{\(f(a)\)};
+
+        \filldraw[radius=0.075, Fuchsia] (1.08, 3) circle;
+        \draw[dashed, Fuchsia, thick] (1.08, 3) -- (1.08, 0);
+        \filldraw[radius=0.075, Fuchsia] (2.14, 3) circle;
+        \draw[dashed, Fuchsia, thick] (2.14, 3) -- (2.14, 0);
+        \filldraw[radius=0.075, Fuchsia] (2.97, 3) circle;
+        \draw[dashed, Fuchsia, thick] (2.97, 3) -- (2.97, 0);
+
+        \draw[dashed, Fuchsia, thick] (0, 3) -- (2.97, 3);
+
+        \filldraw[radius=0.075, MidnightBlue] (5, 6.41) circle;
+        \draw[dashed, MidnightBlue, thick] (5, 0) node[below]{\(b\)} -- (5, 6.41) -- (0, 6.41) node[left]{\(f(b)\)};
+    \end{tikzpicture}
+    
+    \caption{In the intermediate value theorem, for a given value \(y\), the value of \(x\) does not necessarily have to be unique.}
+    \label{fig:Ch02-int-value-thm-uniqueness}
 \end{figure}
