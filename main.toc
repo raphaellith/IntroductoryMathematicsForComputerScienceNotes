@@ -10,5 +10,6 @@
 \contentsline {subsection}{\numberline {2.1}Trigonometric functions}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Exponential and logarithm}{10}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Introduction to limits}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Little o and big O notation}{14}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Continuity}{15}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.4}Handling infinities and indeterminate forms}{15}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Little o and big O notation}{15}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Continuity}{17}{subsection.2.6}%

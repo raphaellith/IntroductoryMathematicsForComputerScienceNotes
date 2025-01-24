@@ -182,38 +182,230 @@ The plot of \(y = \ln{x}\) is given in figure \ref{fig:Ch02-ln-graph}. Note that
 \subsection{Introduction to limits}
 
 The idea of limits is simple.
-
+%
 \begin{quote}
-    As \(x\) approaches a value, \(f(x)\) also approaches a value --- both possibly infinite. To denote this we write \(f(x) \rightarrow b\) as \(x \rightarrow a\), or \(\lim_{x \rightarrow a} f(x) = b\).
+    As the input \(x\) approaches a value \(p\), the output \(f(x)\) also approaches a value \(L\). (Both \(p\) and \(L\) possibly infinite.) To denote this we write \(f(x) \rightarrow L\) as \(x \rightarrow p\), or \(\lim_{x \rightarrow p} f(x) = L\).
 \end{quote}
 
-This gives us four different cases.
+How do you formally define something like that?
+
+Let us consider the simplest case, where both \(p\) and \(L\) are finite. We give the following definition.
 %
-\begin{itemize}
-    \item As \(x\) approaches infinity, \(f(x)\) also approaches infinity. This means that \(f(x)\) can become arbitrarily large for large enough \(x\), i.e.
-    %
-    \[\forall d > 0,\; \exists c > 0,\; x > c \Rightarrow f(x) > d\text{.}\]
-    %
-    See figure \ref{fig:Ch02-lim-inf-inf}. (Restricting \(c\) and \(d\) to positive values is not strictly necessary, but it does make our lives easier in some cases.)
+\begin{quote}
+    \textbf{Definition of a limit, with both \(p\) and \(L\) finite.}
 
-    \item As \(x\) approaches a value \(a\), \(f(x)\) approaches infinity. This means that \(f(x)\) can become arbitrarily large for \(x\) close enough \(x\), i.e.
-    %
-    \[\forall d > 0,\; \exists \eta > 0,\; 0 < \abs{x - a} < \eta \Rightarrow f(x) > d\text{.}\]
-    %
-    In other words, for any value \(d\), \(f(x)\) can be greater than \(d\) as long as the distance between \(x\) and \(a\) is less than some value \(\eta\). See figure \ref{fig:Ch02-lim-val-inf}.
+    The main idea is that \(f(x)\) can get \textit{arbitrarily close} to \(L\) as long as \(x\) is close enough to \(p\).
 
-    \item As \(x\) approaches infinity, \(f(x)\) approaches a value \(b\). This means that \(f(x)\) can get arbitrarily close to \(b\) for large enough \(x\), i.e.
+    In other words, {\color{BrickRed} no matter how close we want our output to be to \(L\)}, {\color{Fuchsia} we can always find a range of inputs around \(p\)} such that {\color{MidnightBlue} the output is within that range}. This is written as
     %
-    \[\forall \epsilon > 0,\; \exists c > 0,\; x > c \Rightarrow \abs{f(x) - b} < \epsilon\text{.}\]
-    %
-    See figure \ref{fig:Ch02-lim-inf-val}.
+    \[
+    {\color{BrickRed} \forall \epsilon > 0},\;
+    {\color{Fuchsia} \exists \delta > 0},\;
+    {\color{Fuchsia} \forall x \in \mathbb{R}},\;
+    {\color{Fuchsia} 0 < \abs{x - p} < \delta}
+    \Rightarrow
+    {\color{MidnightBlue} \abs{f(x) - L} < \epsilon}
+    \text{.}
+    \]
+\end{quote}
+%
+This is called the epsilon-delta or \((\epsilon, \delta)\) definition of a limit. See figure \ref{fig:Ch02-lim-val-val} for an illustration of this.
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}
+        \draw[thin,gray!40] (-1,-1) grid (5, 6);
+        \draw[thick, ->, >=latex] (-1,0)--(5,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-1)--(0,6) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+
+        \draw [BrickRed, very thick, domain=-1:5, samples=100] plot (\x, {6*(sin((0.3*\x) r))^2}); 
+
+        \draw[dashed, thick] (0, 2.78) -- (5, 2.78);
+        \draw[dashed, thick] (0, 4.51) -- (5, 4.51);
+
+        \draw[dashed, thick] (2.5, 0) -- (2.5, 6);
+        \draw[dashed, thick] (3.5, 0) -- (3.5, 6);
+
+        \draw[MidnightBlue, dashed, thick] (3, 0) node[below]{\(p\)} -- (3, 6);
+        \draw[MidnightBlue, dashed, thick] (0, 3.68) node[left]{\(L\)} -- (5, 3.68);
+
+        \draw[ForestGreen, thick, latex-latex] (2.5, 6) -- (3, 6) node[pos=0.5, above] {\(\delta\)};
+
+        \draw[ForestGreen, thick, latex-latex] (3, 6) -- (3.5, 6) node[pos=0.5, above] {\(\delta\)};
+
+        \draw[ForestGreen, thick, latex-latex, shift={(0.1, 0)}] (5, 2.78) -- (5, 3.68) node[pos=0.5, right] {\(\epsilon\)};
+
+        \draw[ForestGreen, thick, latex-latex, shift={(0.1, 0)}] (5, 3.68) -- (5, 4.51) node[pos=0.5, right] {\(\epsilon\)};
+    \end{tikzpicture}
     
-    \item As \(x\) approaches a value \(a\), \(f(x)\) approaches a value \(b\). This means that \(f(x)\) can become arbitrarily close to \(b\) for \(x\) close enough to \(a\), i.e.
+    \caption{As \(x\) approaches \(p\), \(f(x)\) approaches \(L\).}
+    \label{fig:Ch02-lim-val-val}
+\end{figure}
+
+
+An example problem utilising the definition is shown below.
+
+\vspace{15pt}
+\begin{mdframed}[linewidth=1pt]
+\noindent \textbf{Problem.} Using the epsilon-delta definition of a limit, show that \(\lim_{x \rightarrow 2} 2x + 3 = 7\).
+
+\vspace{10pt}
+
+\textbf{Intuition.} We want to show that
+%
+\[\forall \epsilon > 0,\; \exists \delta > 0,\; \forall x \in \mathbb{R},\; 0 < \abs{x - 2} < \delta \Rightarrow \abs{2x + 3 - 7} < \epsilon\]
+%
+i.e.
+%
+\[\forall \epsilon > 0,\; \exists \delta > 0,\; \forall x \in \mathbb{R},\; 0 < \abs{x - 2} < \delta \Rightarrow \abs{2x - 4} < \epsilon\]
+
+Given some \(\epsilon > 0\), we need to work out how to choose a \(\delta\) value such that \(0 < \abs{x - 2} < \delta\) implies \(\abs{2x - 4} < \epsilon\). Simple observation shows that we can choose \(\delta = \epsilon/2\), which allows us to construct the proof below.
+
+\vspace{10pt}
+
+\textbf{Proof.} We want to show that
+%
+\[\forall \epsilon > 0,\; \exists \delta > 0,\; \forall x \in \mathbb{R},\; 0 < \abs{x - 2} < \delta \Rightarrow \abs{2x - 4} < \epsilon\text{.}\]
+%
+For any \(\epsilon > 0\), let \(\delta = \epsilon/2 > 0\). Then if \(0 < \abs{x - 2} < \delta\) for some real \(x\), we have
+%
+\begin{align*}
+    \abs{x - 2} &< \delta\\
+    \abs{x - 2} &< \frac{\epsilon}{2}\\
+    2\abs{x - 2} &< \epsilon\\
+    \abs{2x - 4} &< \epsilon
+\end{align*}
+%
+which concludes the proof.
+\end{mdframed}
+\vspace{15pt}
+
+
+Now, what happens if \(L\) is infinite? We can define this as follows.
+%
+\begin{quote}
+    \textbf{Definition of a limit, with \(p\) finite and \(L\) infinite.}
+
+    The main idea is that \(f(x)\) can become arbitrarily large as \(x\) gets close enough to \(p\).
+
+    In other words, {\color{BrickRed} for any value \(d\)}, {\color{Fuchsia} we can always find a range of inputs around \(p\)} such that {\color{MidnightBlue} the output is greater than \(d\)}. This is written as
     %
-    \[\forall \epsilon > 0,\; \exists \eta > 0,\; 0 < \abs{x - a} < \eta \Rightarrow \abs{f(x) - b} < \epsilon\text{.}\]
+    \[
+    {\color{BrickRed} \forall d > 0},\;
+    {\color{Fuchsia} \exists \delta > 0},\;
+    {\color{Fuchsia} \forall x \in \mathbb{R}},\;
+    {\color{Fuchsia} 0 < \abs{x - p} < \delta}
+    \Rightarrow
+    {\color{MidnightBlue} f(x) > d}
+    \text{.}
+    \]
+\end{quote}
+%
+See figure \ref{fig:Ch02-lim-val-inf}.
+
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}
+        \draw[thin,gray!40] (-3,-1) grid (4, 6);
+        \draw[thick, ->, >=latex] (-3,0)--(4,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-1)--(0,6) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+
+        \draw [BrickRed, very thick, domain=-3:2.99, samples=100] plot (\x, {6-ln(300-100*\x)}); 
+
+        \draw[dashed, thick] (2.5, 0) -- (2.5, 6);
+        \draw[dashed, thick] (3.5, 0) -- (3.5, 6);
+        \draw[MidnightBlue, dashed, thick] (0, 2.09) node[left]{\(d\)} -- (4, 2.09);
+
+        \draw[MidnightBlue, thick, dashed] (3, 0) node[below]{\(p\)} -- (3, 6);
+
+        \draw[ForestGreen, thick, latex-latex, shift={(0, 0.1)}] (2.5, 6) -- (3, 6) node[pos=0.5, above] {\(\delta\)};
+
+        \draw[ForestGreen, thick, latex-latex, shift={(0, 0.1)}] (3, 6) -- (3.5, 6) node[pos=0.5, above] {\(\delta\)};
+    \end{tikzpicture}
+    
+    \caption{As \(x\) approaches \(p\), \(f(x)\) approaches infinity.}
+    \label{fig:Ch02-lim-val-inf}
+\end{figure}
+
+
+Now let us consider the opposite scenario where \(L\) is finite but \(p\) is infinite. We modify our definition like so.
+%
+\begin{quote}
+    \textbf{Definition of a limit, with \(p\) infinite and \(L\) finite.}
+
+    The main idea is that \(f(x)\) can become arbitrarily close to \(L\) as long as \(x\) is large enough.
+
+    In other words, {\color{BrickRed} no matter how close we want our output to be to \(L\)}, {\color{Fuchsia} we can always find a value \(c\)} such that {\color{Fuchsia} as long as \(x\) is greater than \(c\)}, {\color{MidnightBlue} the output is within that range}. This is written as
     %
-    See figure \ref{fig:Ch02-lim-val-val}.
-\end{itemize}
+    \[
+    {\color{BrickRed}\forall \epsilon > 0},\;
+    {\color{Fuchsia} \exists c > 0},\;
+    {\color{Fuchsia} \forall x \in \mathbb{R}},\;
+    {\color{Fuchsia} x > c}
+    \Rightarrow
+    {\color{MidnightBlue} \abs{f(x) - L} < \epsilon}
+    \text{.}
+    \]
+\end{quote}
+%
+See figure \ref{fig:Ch02-lim-inf-val}.
+
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}
+        \draw[thin,gray!40] (-1,-1) grid (6, 6);
+        \draw[thick, ->, >=latex] (-1,0)--(6,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-1)--(0,6) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+
+        \draw [BrickRed, very thick, domain=-0.78:6, samples=100] plot (\x, {5-2.71828^(1-\x)}); 
+
+        \draw[dashed, thick] (0, 4.63) -- (6, 4.63);
+        \draw[dashed, thick] (0, 5.37) -- (6, 5.37);
+        \draw[MidnightBlue, dashed, thick] (2, 0) node[below]{\(c\)} -- (2, 6);
+
+        \draw[MidnightBlue, thick, dashed] (0, 5) node[left]{\(L\)}-- (6, 5);
+
+        \draw[ForestGreen, semithick, latex-latex, shift={(0.1, 0)}] (6, 5.37) -- (6, 5) node[pos=0.5, right] {\(\epsilon\)};
+
+        \draw[ForestGreen, semithick, latex-latex, shift={(0.1, 0)}] (6, 5) -- (6, 4.63) node[pos=0.5, right] {\(\epsilon\)};
+    \end{tikzpicture}
+    
+    \caption{As \(x\) approaches infinity, \(f(x)\) approaches \(L\).}
+    \label{fig:Ch02-lim-inf-val}
+\end{figure}
+
+
+
+The final case is where both \(p\) and \(L\) are infinite. The definition for this is as follows.
+%
+\begin{quote}
+    \textbf{Definition of a limit, with both \(p\) and \(L\) infinite.}
+
+    The main idea is that \(f(x)\) can become arbitrarily large as \(x\) gets large enough.
+
+    In other words, {\color{BrickRed} for any value \(d\)}, {\color{Fuchsia} we can always find a value \(c\)} such that {\color{Fuchsia} as long as \(x\) is greater than \(c\)}, {\color{MidnightBlue} the output is greater than \(d\)}. This is written as
+    %
+    \[
+    {\color{BrickRed} \forall d > 0},\;
+    {\color{Fuchsia} \exists c > 0},\;
+    {\color{Fuchsia} \forall x \in \mathbb{R}},\;
+    {\color{Fuchsia} x > c}
+    \Rightarrow
+    {\color{MidnightBlue} f(x) > d}
+    \text{.}
+    \]
+\end{quote}
+
+See figure \ref{fig:Ch02-lim-inf-inf}.
+
 
 \begin{figure}[H]
     \centering
@@ -228,100 +420,15 @@ This gives us four different cases.
 
         \draw[MidnightBlue, dashed, thick] (2, 0) node[below]{\(c\)} --(2, 7);
         \draw[MidnightBlue, dashed, thick] (0, 4.3) node[left]{\(d\)} -- (3, 4.3);
-
-        \draw[MidnightBlue, line width=1mm, -latex] (1, 4.8) -- (1, 5.8);
-
-        \draw[MidnightBlue, line width=1mm, -latex] (2.5, 2) -- (3.5, 2);
     \end{tikzpicture}
     
     \caption{As \(x\) approaches infinity, so does \(f(x)\).}
     \label{fig:Ch02-lim-inf-inf}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
 
-    \begin{tikzpicture}
-        \draw[thin,gray!40] (-3,-1) grid (4, 6);
-        \draw[thick, ->, >=latex] (-3,0)--(4,0) node[right]{\(x\)};
-        \draw[thick, ->, >=latex] (0,-1)--(0,6) node[above]{\(y\)};
-        \draw (0, 0) node[below left] {0};
 
-        \draw [BrickRed, very thick, domain=-3:2.99, samples=100] plot (\x, {6-ln(300-100*\x)}); 
-
-        \draw[dashed, thick] (2.5, -1) -- (2.5, 6);
-        \draw[dashed, thick] (3.5, -1) -- (3.5, 6);
-        \draw[MidnightBlue, dashed, thick] (0, 2.09) node[left]{\(d\)} -- (4, 2.09);
-
-        \draw[ForestGreen, very thick, dashed] (3, -1) -- (3, 6) node[above]{\(a\)};
-
-        \draw[ForestGreen, thick, latex-latex, shift={(0, -0.1)}] (2.5, -1) -- (3, -1) node[pos=0.5, below, shift={(0, -0.1)}] {\(\eta\)};
-
-        \draw[ForestGreen, thick, latex-latex, shift={(0, -0.1)}] (3, -1) -- (3.5, -1) node[pos=0.5, below, shift={(0, -0.1)}] {\(\eta\)};
-    \end{tikzpicture}
-    
-    \caption{As \(x\) approaches \(a\), \(f(x)\) approaches infinity.}
-    \label{fig:Ch02-lim-val-inf}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-
-    \begin{tikzpicture}
-        \draw[thin,gray!40] (-1,-1) grid (6, 6);
-        \draw[thick, ->, >=latex] (-1,0)--(6,0) node[right]{\(x\)};
-        \draw[thick, ->, >=latex] (0,-1)--(0,6) node[above]{\(y\)};
-        \draw (0, 0) node[below left] {0};
-
-        \draw [BrickRed, very thick, domain=-0.78:6, samples=100] plot (\x, {5-2.71828^(1-\x)}); 
-
-        \draw[dashed, thick] (-1, 4.63) -- (6, 4.63);
-        \draw[dashed, thick] (-1, 5.37) -- (6, 5.37);
-        \draw[MidnightBlue, dashed, thick] (2, 0) node[below]{\(c\)} -- (2, 6);
-
-        \draw[ForestGreen, very thick, dashed] (-1, 5) node[left]{\(b\)}-- (6, 5);
-
-        \draw[ForestGreen, semithick, latex-latex, shift={(0.1, 0)}] (6, 5.37) -- (6, 5) node[pos=0.5, right] {\(\epsilon\)};
-
-        \draw[ForestGreen, semithick, latex-latex, shift={(0.1, 0)}] (6, 5) -- (6, 4.63) node[pos=0.5, right] {\(\epsilon\)};
-    \end{tikzpicture}
-    
-    \caption{As \(x\) approaches infinity, \(f(x)\) approaches \(b\).}
-    \label{fig:Ch02-lim-inf-val}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-
-    \begin{tikzpicture}
-        \draw[thin,gray!40] (-1,-1) grid (5, 6);
-        \draw[thick, ->, >=latex] (-1,0)--(5,0) node[right]{\(x\)};
-        \draw[thick, ->, >=latex] (0,-1)--(0,6) node[above]{\(y\)};
-        \draw (0, 0) node[below left] {0};
-
-        \draw [BrickRed, very thick, domain=-1:5, samples=100] plot (\x, {6*(sin((0.3*\x) r))^2}); 
-
-        \draw[dashed, thick] (-1, 2.78) -- (5, 2.78);
-        \draw[dashed, thick] (-1, 4.51) -- (5, 4.51);
-
-        \draw[dashed, thick] (2.5, -1) -- (2.5, 6);
-        \draw[dashed, thick] (3.5, -1) -- (3.5, 6);
-
-        \draw[MidnightBlue, dashed, thick] (3, -1) node[below]{\(a\)} -- (3, 6);
-        \draw[MidnightBlue, dashed, thick] (-1, 3.68) node[left]{\(b\)} -- (5, 3.68);
-
-        \draw[ForestGreen, thick, latex-latex] (2.5, 6) -- (3, 6) node[pos=0.5, above] {\(\eta\)};
-
-        \draw[ForestGreen, thick, latex-latex] (3, 6) -- (3.5, 6) node[pos=0.5, above] {\(\eta\)};
-
-        \draw[ForestGreen, thick, latex-latex, shift={(0.1, 0)}] (5, 2.78) -- (5, 3.68) node[pos=0.5, right] {\(\epsilon\)};
-
-        \draw[ForestGreen, thick, latex-latex, shift={(0.1, 0)}] (5, 3.68) -- (5, 4.51) node[pos=0.5, right] {\(\epsilon\)};
-    \end{tikzpicture}
-    
-    \caption{As \(x\) approaches \(a\), \(f(x)\) approaches \(b\).}
-    \label{fig:Ch02-lim-val-val}
-\end{figure}
+\subsection{Handling infinities and indeterminate forms}
 
 A limit that exists is known as a \textit{finite} limit. Finite limits can be combined in a natural way.
 %
@@ -353,35 +460,100 @@ There are certain cases where we \textit{cannot} combine limits. These are calle
 
 
 
-
 \subsection{Little o and big O notation}
 
-Here we introduce two types of notation: little \(o\) and big \(O\).
+It is often useful to talk about the rate at which some function changes as its input increases (or decreases), without worrying to much about the detailed form. To do this, we introduce two types of notation: little \(o\) and big \(O\).
+
+To compare the order of growth of two functions \(f(x)\) and \(g(x)\), we can look at the ratio of the two functions as their input approaches infinity, i.e.
+%
+\[\lim_{x \rightarrow \infty} \left|\frac{f(x)}{g(x)}\right|\text{.}\]
+%
+Let's look at how this limit behaves for different functions.
+
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}[scale=0.8]
+        \draw[thin,gray!40] (-1,-1) grid (14, 8);
+        \draw[thick, ->, >=latex] (-1,0)--(14,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-1)--(0,8) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+
+        \draw [BrickRed, very thick, domain=0:14] plot (\x, {0.6*\x-1});
+        \draw node[BrickRed] at (9.5, 6) {\(f_1(x) = 0.6x - 1\)};
+
+        \draw [MidnightBlue, very thick, domain=0:14] plot (\x, {0.4*\x+0.5});
+        \draw node[MidnightBlue] at (12, 4.25) {\(g(x) = 0.4x - 0.5\)};
+
+        \draw[BurntOrange, very thick, domain=0:14, samples=100] plot (\x, {abs((0.6*\x-1)/(0.4*\x+0.5))});
+        \draw node[BurntOrange] at (12, 2) {\(\left|\dfrac{f_1(x)}{g(x)}\right|\)};
+    \end{tikzpicture}
+    
+    \caption{Graphs of a linear function \(f_1(x)\), another linear function \(g(x)\) and the absolute value of their quotient \(|f(x)/g(x)|\).}
+    \label{fig:Ch02-linear-linear-quotient-graph}
+\end{figure}
+
+
+Figure \ref{fig:Ch02-linear-linear-quotient-graph} shows the graphs of two functions \(f_1(x) = 0.6x - 1\) and \(g(x) = 0.4x + 0.5\). Both of these functions are linear, so they should have the same order of growth. When this happens, the limit of the ratio of the two functions, as \(x\) approaches infinity, should be a finite constant. As we see in the graph, this is indeed the case, with the orange curve converging to a value of \(1.5\).
+
+Now consider the logarithmic function \(f_2(x) = \ln{x}\) and its relationship with \(g(x)\). As shown in figure \ref{fig:Ch02-log-linear-quotient-graph}, the limit of their ratio once again converges to a finite constant: zero. This is because the logarithmic function grows much slower than the linear function.
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}[scale=0.8]
+        \draw[thin,gray!40] (-1,-1) grid (14, 8);
+        \draw[thick, ->, >=latex] (-1,0)--(14,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-1)--(0,8) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+
+        \draw [BrickRed, very thick, domain=0.375:14, samples=100] plot (\x, {ln(\x)});
+        \draw node[BrickRed] at (12.5, 3) {\(f_2(x) = \ln{x}\)};
+
+        \draw [MidnightBlue, very thick, domain=0:14] plot (\x, {0.4*\x+0.5});
+        \draw node[MidnightBlue] at (12, 4.25) {\(g(x) = 0.4x - 0.5\)};
+
+        \draw[BurntOrange, very thick, domain=0.02:14, samples=100] plot (\x, {abs(ln(\x)/(0.4*\x+0.5))});
+        \draw node[BurntOrange] at (12, 1.25) {\(\left|\dfrac{f_2(x)}{g(x)}\right|\)};
+    \end{tikzpicture}
+    
+    \caption{Graphs of a logarithmic function \(f_2(x)\), a linear function \(g(x)\) and the absolute value of their quotient \(|f(x)/g(x)|\).}
+    \label{fig:Ch02-log-linear-quotient-graph}
+\end{figure}
+
+From this we can gather that the limit of the ratio of two functions \(f(x)\) and \(g(x)\) is bounded (i.e. a finite constant) when \(f(x)\) grows \textit{as fast as} or \textit{slower} than \(g(x)\). We can denote this with big \(O\) notation, as \(f(x) = O(g(x))\). The definition of big \(O\) notation is given below.
+%
+\begin{quote}
+    \textbf{Big \(\mathbf{O}\) notation.}
+
+    We write \(f = O(g)\) near infinity if \(\lim_{x \rightarrow \infty} \left|\frac{f(x)}{g(x)}\right|\) is bounded, i.e.
+    %
+    \[\exists M \in \mathbb{R},\; \lim_{x \rightarrow \infty} \left|\frac{f(x)}{g(x)}\right| < M\text{.}\]
+    
+    Sometimes we want to consider the growth rate of functions not just near infinity but near a specific point \(x = b\). In this case, we write \(f = O(g)\) near \(b\) if
+    %
+    \[\exists M \in \mathbb{R},\; \lim_{x \rightarrow b} \left|\frac{f(x)}{g(x)}\right| < M\text{.}\]
+\end{quote}
+
+Remember that big \(O\) notation covers two cases:
+%
+\begin{itemize}
+    \item \(f(x)\) grows as fast as \(g(x)\) (meaning that the two functions have the same order of growth), or
+    \item \(f(x)\) grows slower than \(g(x\)) (meaning that the former has a lower order of growth than the latter).
+\end{itemize}
+%
+If we want to be more specific and consider only the second case where \(f(x)\) grows strictly slower than \(g(x)\), we can use little \(o\) notation to write \(f(x) = o(g(x))\). The definition of little \(o\) notation is given below.
 %
 \begin{quote}
     \textbf{Little \(\mathbf{o}\) notation.}
 
-    We write \(f = o(g)\) near a value \(b\) if \(\lim_{x \rightarrow b} \frac{f(x)}{g(x)} = 0\). This means that \(f\) is negligible when compared with \(g\) (or that \(g\) is more significant than \(f\)) near \(b\).
+    We write \(f = o(g)\) near infinity if \(\lim_{x \rightarrow \infty} \frac{f(x)}{g(x)} = 0\).
     
-    For example, we say that \(x = o(x^2)\) near \(\infty\) because \(\lim_{x\rightarrow \infty} x / x^2 = 0\).
-
-    \vspace{1em}
-
-    \textbf{Big \(\mathbf{O}\) notation.}
-
-    We write \(f = O(g)\) near a value \(b\) if \(\lim_{x \rightarrow b} \left|\frac{f(x)}{g(x)}\right|\) is bounded. We can express the idea of being ``bounded'' more precisely as
-    %
-    \[\exists M \in \mathbb{R},\; \lim_{x \rightarrow b} \left|\frac{f(x)}{g(x)}\right| < M\text{.}\]
-    %
-    This means that \(f\) and \(g\) have a similar growth rate near \(b\).
-
-    For example, we say that \(3x = O(x+1)\) near \(\infty\) because \(\lim_{x \rightarrow \infty} \left|\frac{3x}{x+1}\right| < \frac{3x}{x} = 3\).
+    Again, we sometimes want to consider the growth rate of functions near a specific point \(x = b\). For this we say that \(f = o(g)\) near \(b\) if \(\lim_{x \rightarrow b} \frac{f(x)}{g(x)} = 0\).    
 \end{quote}
-%
-Notice that by definition, we have \(f = o(g) \;\Rightarrow\; f = O(g)\). This is because if \(f = o(g)\) is true, then the limit \(\lim_{x \rightarrow b} \frac{f(x)}{g(x)}\) must equal zero and is therefore bounded, which gives us \(f = O(g)\).
 
-
-
+Note that since little \(o\) is a special case of big \(O\), we have \(f = o(g) \;\Rightarrow\; f = O(g)\).
 
 
 
