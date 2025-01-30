@@ -13,3 +13,10 @@
 \contentsline {subsection}{\numberline {2.4}Handling infinities and indeterminate forms}{15}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Little o and big O notation}{15}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Continuity}{17}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Vector spaces}{19}{section.3}%
+\contentsline {subsection}{\numberline {3.1}What is a vector space?}{19}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Collinearity, span and subspaces}{21}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Linear independence}{22}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Basis}{23}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Linear mappings}{24}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Kernel and image}{25}{subsection.3.6}%

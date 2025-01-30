@@ -25,10 +25,13 @@
 
 \usepackage{tikz, pgfplots}
 \pgfplotsset{compat=1.18}
+\usepackage{tikz-3dplot}
 
 
 \newcommand{\abs}[1]{|#1|}
-
+\DeclareMathOperator{\kernel}{Ker}  % \ker exists but is lowercase
+\DeclareMathOperator{\image}{Im}
+\DeclareMathOperator{\Span}{Span}
 
 
 
@@ -52,5 +55,8 @@
 
 \newpage
 \input{Sections/02_ContinuousFunctions}
+
+\newpage
+\input{Sections/03_VectorSpaces}
 
 \end{document}
