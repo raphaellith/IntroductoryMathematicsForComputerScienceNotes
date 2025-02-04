@@ -38,11 +38,11 @@ To start, we define a \textit{vector space} as follows.
 \begin{quote}
     \textbf{Definition of a vector space.}
 
-    For a field \(K\), a non-empty set \(V\) is a \(K\)-vector space if, for any \(\vec{u}, \vec{v} \in V\) and any scalar \(a \in K\), we have
+    For a field \(K\), a non-empty set \(V\) is a \(K\)-vector space (or a vector space over \(K\)) if, for any \(\vec{u}, \vec{v} \in V\) and any scalar \(a \in K\), we have
     %
     \begin{align*}
-        \vec{u} + \vec{v} &\in V \tag{vector addition}\\
-        a\vec{u} &\in V \tag{scalar multiplication}
+        \vec{u} + \vec{v} &\in V \tag{closure under vector addition}\\
+        a\vec{u} &\in V \tag{closure under scalar multiplication}
     \end{align*}
     %
     The elements of \(V\) are called \textit{vectors}.
@@ -66,8 +66,14 @@ We note the following:
         1\vec{v} &= \vec{v}
     \end{align*}
     %
-    where \(\vec{0}\) represents the zero vector.
+    where \(\vec{u}, \vec{v}, \vec{w}\) are vectors, \(a, b\) are scalars in \(K\), and \(\vec{0}\) represents the zero vector.
 \end{itemize}
+
+
+
+
+
+\subsection{Examples of vector spaces}
 
 Based on the definition above, what counts as a vector space? (For now, let us set \(K = \mathbb{R}\) and consider only \(\mathbb{R}\)-vector spaces.)
 
@@ -85,7 +91,51 @@ Unsurprisingly, the set of pairs of real numbers, denoted as \(\mathbb{R}^2\), i
     \right\}
 \]
 %
-and each of the pairs \(\begin{bmatrix} x \\ y \end{bmatrix}\) is a vector. This is because of the fact that the sum of any two vectors in \(\mathbb{R}^2\) must also be in \(\mathbb{R}^2\), and that the scaled version of any vector in \(\mathbb{R}^2\) must also be in \(\mathbb{R}^2\). These vectors can be visualised as arrows in 2D space. The same goes with the set of triplets of real numbers
+and each of the pairs \(\begin{bmatrix} x \\ y \end{bmatrix}\) is a vector. This is because of the fact that the sum of any two vectors in \(\mathbb{R}^2\) must also be in \(\mathbb{R}^2\), and that the scaled version of any vector in \(\mathbb{R}^2\) must also be in \(\mathbb{R}^2\). These vectors can be visualised as arrows in 2D space, as shown in figures \ref{fig:Ch03-r2-vectors-closed-under-addition} and \ref{fig:Ch03-r2-vectors-closed-under-scaling}.
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}[scale=0.75]
+        \draw[thin,gray!40] (-1,-1) grid (5, 4);
+        \draw[thick, ->, >=latex] (-1,0)--(5,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-1)--(0,4) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+        
+        \draw[line width=2pt, MidnightBlue, -stealth] (0,0)--(3,0) node[pos=3/4, below]{\(\vec{u}\)};
+        
+        \draw[line width=2pt, Fuchsia, -stealth] (0,0)--(1,3) node[pos=1/2, anchor=west]{\(\vec{v}\)};    
+        
+        \draw[line width=2pt, ForestGreen, -stealth] (0,0)--(4,3) node[above]{\(\vec{u}+\vec{v}\)};
+    \end{tikzpicture}
+    
+    \caption{Vectors in \(\mathbb{R}^2\) are closed under addition. For any given pair of vectors \(\vec{u}\) and \(\vec{v}\) both in \(V\), their sum \(\vec{u} + \vec{v}\) must also be a vector.}
+    \label{fig:Ch03-r2-vectors-closed-under-addition}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+
+    \begin{tikzpicture}[scale=0.75]
+        \draw[thin,gray!40] (-6,-4) grid (6, 4);
+        \draw[thick, ->, >=latex] (-6,0)--(6,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-4)--(0,4) node[above]{\(y\)};
+        \draw (0, 0) node[below left] {0};
+
+        \draw[dashed, line width=1pt, MidnightBlue!80] (-6,-3)--(6,3); 
+        \draw[line width=2pt, MidnightBlue, -stealth] (0,0)--(2,1) node[above left] {\(\vec{v}\)};
+         
+    \end{tikzpicture}
+    
+    \caption{Vectors in \(\mathbb{R}^2\) are closed under scalar multiplication. For any given vector \(v \in \mathbb{R}^2\), the product between \(\vec{v}\) and any scalar \(a\) (i.e. any vector lying on the dashed line) is also a vector.}
+    \label{fig:Ch03-r2-vectors-closed-under-scaling}
+\end{figure}
+
+
+
+
+
+The same goes with the set of triplets of real numbers
 %
 \(
 \begin{bmatrix}
@@ -213,7 +263,7 @@ Given a family of vectors \(S = (\vec{u_1}, \vec{u_2}, \cdots, \vec{u_n})\), the
 %
 \begin{itemize}
     \item The vectors \(\vec{u}\) and \(\vec{v}\) span the \(xy\)-plane.
-    \item The vectors \(\vec{u}\), \(\vec{v}\) and \(\vec{w}\) together span the entire three-dimensional space.
+    \item The vectors \(\vec{u}\), \(\vec{v}\) and \(\vec{w}\) together span the entire three-dimensional space \(\mathbb{R}^3\).
     \item Since the vectors \(\vec{w}\) and \(2\vec{w}\) are collinear, their span is along a single straight line.
 \end{itemize}
 
@@ -293,7 +343,7 @@ The example problems below demonstrate how linear independence can be proved or 
 %
 \[4x^2 - 6x = 2{\color{BrickRed}(2x^2)} + (-2){\color{MidnightBlue}(3x)}\]
 
-\textbf{Solution 2.} No, because \(2{\color{MidnightBlue}(3x)} + {\color{ForestGreen}(4x^2 - 6x)} - 2{\color{BrickRed}(2x^2)}\).
+\textbf{Solution 2.} No, because \(2{\color{MidnightBlue}(3x)} + {\color{ForestGreen}(4x^2 - 6x)} - 2{\color{BrickRed}(2x^2)}= 0\).
 \vspace{10pt}
 \end{mdframed}
 
@@ -426,16 +476,16 @@ which is known as the \textit{canonical basis}. See figures \ref{fig:Ch03-canoni
 
 
 
-\subsection{Linear mappings}
+\subsection{Linear maps}
 
-We define a \textit{linear mapping} as follows.
+We define a \textit{linear map} or \textit{linear mapping} as follows.
 %
 \begin{quote}
-    \textbf{Definition of a linear mapping.}
+    \textbf{Definition of a linear map.}
 
     For two \(K\)-vector spaces \(V\) and \(W\), consider a function \(f : V \to W\) that maps each vector in \(V\) to a vector in \(W\).
     
-    This function is said to be a \textit{linear mapping} if, for any two vectors \(\vec{u}, \vec{v} \in V\) and any scalar \(a \in K\), we have
+    This function is said to be a \textit{linear map} if, for any two vectors \(\vec{u}, \vec{v} \in V\) and any scalar \(a \in K\), we have
     %
     \begin{align*}
         f(\vec{u} + \vec{v}) &= f(\vec{u}) + f(\vec{v})\\
@@ -446,14 +496,14 @@ We define a \textit{linear mapping} as follows.
 Once again we can combine the two equations above to get an alternative but equivalent definition.
 %
 \begin{quote}
-    \textbf{Alternative definition of a linear mapping.}
+    \textbf{Alternative definition of a linear map.}
     
-    The function \(f : V \to W\) is said to be a \textit{linear mapping} if, for any two vectors \(\vec{u}, \vec{v} \in V\) and any scalar \(a \in K\), we have \(f(a\vec{u} + \vec{v}) = a f(\vec{u}) + f(\vec{v})\).
+    The function \(f : V \to W\) is said to be a \textit{linear map} if, for any two vectors \(\vec{u}, \vec{v} \in V\) and any scalar \(a \in K\), we have \(f(a\vec{u} + \vec{v}) = a f(\vec{u}) + f(\vec{v})\).
 \end{quote}
 %
-For any linear mapping \(f\) we must have \(f(\vec{0}) = \vec{0}\). This can be shown by setting \(a = 0\) and \(\vec{v} = \vec{0}\) in the definition above.
+For any linear map \(f\) we must have \(f(\vec{0}) = \vec{0}\). This can be shown by setting \(a = 0\) and \(\vec{v} = \vec{0}\) in the definition above.
 
-An example of a linear mapping in \(\mathbb{R}^2\) is a function \(f\) that rotates vectors by \(90\degree\) anticlockwise, i.e.
+An example of a linear map in \(\mathbb{R}^2\) is a function \(f\) that rotates vectors by \(90\degree\) anticlockwise, i.e.
 %
 \[
 f\left(
@@ -480,22 +530,22 @@ To prove this, consider any two vectors \(\vec{u} = \begin{bmatrix} x_1 \\ y_1 \
     &= a f(\vec{u}) + f(\vec{v})
 \end{align*}
 %
-which shows that \(f\) is a linear mapping. In fact, rotations, scalings and projections are all linear mappings in \(\mathbb{R}^2\).
+which shows that \(f\) is a linear map. In fact, rotations, scalings and projections are all examples of linear maps in \(\mathbb{R}^2\).
 
-If a linear mapping maps vectors from a vector space to the same vector space, i.e.
+If a linear map maps vectors from a vector space to the same vector space, i.e.
 %
 \[f: V \to V\]
 %
-then this mapping is known as an \textit{endomorphism}\footnote{From ``endo-'' (meaning ``internal'' in Greek) and ``morphism'' (a mathematical term for structure-preserving mappings).}. For instance, the \(90\degree\) rotation function we saw before maps vectors from \(\mathbb{R}^2\) to vectors from \(\mathbb{R}^2\), so it is an endomorphism.
+then this mapping is known as an \textit{endomorphism}\footnote{From ``endo-'' (meaning ``internal'' in Greek) and ``morphism'' (a mathematical term for structure-preserving mappings).}. For instance, the \(90\degree\) rotation function we saw before maps vectors in \(\mathbb{R}^2\) to vectors in \(\mathbb{R}^2\), so it is an endomorphism.
 
-Let \(U\), \(V\) and \(W\) be vector spaces. Given two linear mappings:
+Let \(U\), \(V\) and \(W\) be vector spaces. Given two linear maps:
 %
 \begin{align*}
     f: U &\to V\\
     g: V &\to W
 \end{align*}
 %
-we can \textit{compose} them into a new linear mapping
+we can \textit{compose} them into a new linear map
 %
 \[g \circ f : U \to W\]
 %
@@ -507,7 +557,7 @@ where \(f\) is applied first, then \(g\).
 
 \subsection{Kernel and image}
 
-Consider the linear mapping \(f : V \to W\), where \(V\) and \(W\) are vector spaces. We define the following:
+Consider the linear map \(f : V \to W\), where \(V\) and \(W\) are vector spaces. We define the following:
 %
 \begin{itemize}
     \item The \textit{kernel} of \(f\), denoted as \(\kernel(f)\), is the set of vectors \(v \in V\) for which \(f(v) = \vec{0}\).
