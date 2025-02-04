@@ -21,3 +21,4 @@
 \contentsline {subsection}{\numberline {3.5}Basis}{23}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Linear maps}{24}{subsection.3.6}%
 \contentsline {subsection}{\numberline {3.7}Kernel and image}{26}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Matrices}{27}{section.4}%
