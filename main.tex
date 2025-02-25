@@ -28,13 +28,16 @@
 \usepackage{tikz-3dplot}
 \usetikzlibrary{calc}
 
+\usepackage{mathtools}
+
+
 
 \newcommand{\abs}[1]{|#1|}
 \DeclareMathOperator{\kernel}{Ker}  % \ker exists but is lowercase
 \DeclareMathOperator{\image}{Im}
 \DeclareMathOperator{\Span}{Span}
 
-\usepackage{mathtools}
+\counterwithin*{equation}{section}
 
 
 % Color scheme for TikZ diagrams:
@@ -43,6 +46,8 @@
 % BrickRed
 % BurntOrange
 % Fuchsia
+
+
 
 
 \title{Introductory Mathematics for Computer Science (COMP0011)}
@@ -60,19 +65,22 @@
 
 \tableofcontents
 
-\newpage
-\input{Sections/01_ComplexNums}
+% \newpage
+% \input{Sections/01_ComplexNums}
 
-\newpage
-\input{Sections/02_ContinuousFunctions}
+% \newpage
+% \input{Sections/02_ContinuousFunctions}
 
-\newpage
-\input{Sections/03_VectorSpaces}
+% \newpage
+% \input{Sections/03_VectorSpaces}
 
-\newpage
-\input{Sections/04_Matrices}
+% \newpage
+% \input{Sections/04_Matrices}
 
 \newpage
 \input{Sections/05_SequencesAndSeries.tex}
+
+\newpage
+\input{Sections/06_DifferentialCalculus.tex}
 
 \end{document}
