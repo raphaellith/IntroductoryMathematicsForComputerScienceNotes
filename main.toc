@@ -13,3 +13,9 @@
 \contentsline {subsection}{\numberline {2.3}More on differentiability}{14}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Stationary points}{15}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Differential equations}{18}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Integral calculus}{20}{section.3}%
+\contentsline {subsection}{\numberline {3.1}What is an indefinite integral?}{21}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Rules of integration}{21}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Integration by substitution}{22}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Integration by parts}{22}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}What is a definite integral?}{23}{subsection.3.5}%
