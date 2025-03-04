@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.23)  25 FEB 2025 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.23)  4 MAR 2025 20:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -794,11 +794,7 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen390
 \xmathstrut@box=\box81
 \xmathstrut@dim=\dimen391
-) (./main.aux
-
-LaTeX Warning: Label `fig:Ch06-derivative-of-f-as-tangent' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -1018,16 +1014,16 @@ Package mdframed Info: Not enough space on this page on input line 519.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F0356A20C62CAF5118DA7D8DC309B579;2871.
  ) 
 Here is how much of TeX's memory you used:
- 36750 strings out of 476025
- 845364 string characters out of 5790017
+ 36752 strings out of 476025
+ 845447 string characters out of 5790017
  1874388 words of memory out of 5000000
- 56542 multiletter control sequences out of 15000+600000
+ 56544 multiletter control sequences out of 15000+600000
  553758 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,80p,905b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
