@@ -347,9 +347,17 @@ where \(k_1,\; k_2,\; k_3,\; \cdots,\; k_j \geq 1\). We say that \(k_i\) is the 
 Finally, we introduce an interesting theorem regarding real polynomials of odd degrees.
 
 \begin{quote}
-    \textbf{Theorem.} Any polynomial \(P\) of odd degree and with real coeﬃcients has at least one real root.
+    \textbf{Theorem.}
+    
+    Any polynomial \(P\) of odd degree and with real coeﬃcients has at least one real root.
+\end{quote}
 
-    \textbf{Proof 1: An algebraic proof.} We first prove the following lemma: If \(z\) is a complex and non-real root of \(P\), then so is its conjugate \(\bar{z}\).
+To prove this, we can either use algebra or calculus.
+
+\begin{itemize}
+    \item \textbf{Proof 1: An algebraic proof.}
+    
+    We first prove the following lemma: If \(z\) is a complex and non-real root of \(P\), then so is its conjugate \(\bar{z}\).
     
     We write \(P\) as follows:
     %
@@ -365,7 +373,9 @@ Finally, we introduce an interesting theorem regarding real polynomials of odd d
 
     We now prove the required theorem. Since \(P\) has an odd degree, it must also have an odd number of roots. By the previously proved lemma, for any complex and non-real root \(z\) of \(P\), its conjugate \(\bar{z} \neq z\) is also a root. Hence, the number of non-real roots of \(P\) must be even. This means that the number of real roots of \(P\) must be odd, i.e. at least one. Hence proved.
 
-    \textbf{Proof 2: A calculus proof.} We write \(P\) as follows:
+    \item \textbf{Proof 2: A calculus proof.}
+    
+    We write \(P\) as follows:
     %
     \[P = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\]
     %
@@ -384,4 +394,4 @@ Finally, we introduce an interesting theorem regarding real polynomials of odd d
     Substituting \(d = -1\) (or any negative value) tells us that there exists some negative constant \(c\) such that \(x < c \implies P(x) < -1\). This means that there exists some \(x_{\text{neg}}\) for which \(P(x_{\text{neg}})\) is negative.
 
     Combining the two results above with the intermediate value theorem, we see that there must exist some value \(x_0\) such that \(x_{\text{neg}} < x_0 < x_{\text{pos}}\) and \(P(x_0) = 0\). This \(x_0\) is a real root of \(P\). Hence proved.
-\end{quote}
+\end{itemize}

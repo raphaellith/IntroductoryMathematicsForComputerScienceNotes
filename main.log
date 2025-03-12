@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.23)  12 MAR 2025 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.23)  12 MAR 2025 22:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -905,59 +905,482 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./main.toc)
+) (./main.toc [1
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
+ [2] (./Sections/01_ComplexNums.tex [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.65 \[
+       z \times \overline{z} = (a + bi)(a - bi) = a^2 + b^2 \in \mathbb{R}\t...]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 80.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.131 \end{quote}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.131 \end{quote}
+                 ]
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 153--169
+[][] 
+ []
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}] (./Sections/08_Polynomials.tex
-LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 10.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/tex-gyre/ts1qpl.fd
+LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 178.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tex-gyre/ts1qpl.fd
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
-) [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-<Images/PolynomialDivision.png, id=74, 243.91125pt x 247.92625pt>
+)
+<Images/CartesianCoordsOnCircle.png, id=360, 573.14125pt x 567.11874pt>
+File: Images/CartesianCoordsOnCircle.png Graphic file (type png)
+<use Images/CartesianCoordsOnCircle.png>
+Package pdftex.def Info: Images/CartesianCoordsOnCircle.png  used on input line 202.
+(pdftex.def)             Requested size: 266.14978pt x 263.35269pt.
+ [5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.267 \[\abs{z_1} + \abs{z_2} \geq \abs{z_1+z_2}\]
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.267 \[\abs{z_1} + \abs{z_2} \geq \abs{z_1+z_2}\]
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.267 \[\abs{z_1} + \abs{z_2} \geq \abs{z_1+z_2}\]
+                                                   <./Images/CartesianCoordsOnCircle.png>] [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.362 ... 3\cdot\frac{2\pi}{n},\; \cdots\right\}\]
+                                                  ] [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.426 
+      ]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.437 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.437 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.437 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.437 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.447 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.447 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.447 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.447 \begin{equation}
+                      ) [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.74 \newpage
+             ] (./Sections/02_ContinuousFunctions.tex [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.89 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.89 
+     ] [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 \end{align*}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 \end{align*}
+                  ] [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.246 
+      ]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 251.
+ [13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291     T
+           he main idea is that \(f(x)\) can become arbitrarily large as \(x...] [14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.384 
+      ] [15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.439 \end{align*}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.439 \end{align*}
+                  ] [16] [17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.527 \begin{quote}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.527 \begin{quote}
+                   ] [18]) [19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.77 \newpage
+             
+pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.77 \newpage
+             ] (./Sections/03_VectorSpaces.tex [20] [21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.151 \]
+        
+pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.151 \]
+        ] [22
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.261 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.261 
+      ] [23
+pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.322         \item N
+                     one of the vectors belong to the span of the others.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.26}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.322         \item N
+                     one of the vectors belong to the span of the others.]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 337.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 352.
+ [24] [25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.27}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.502     T
+           he function \(f : V \to W\) is said to be a \textit{linear map} i...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.28}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.502     T
+           he function \(f : V \to W\) is said to be a \textit{linear map} i...] [26]) [27] (./Sections/04_Matrices.tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 79.
+ [28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.29}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.131 \end{mdframed}
+                    ] [29
+pdfTeX warning (ext4): destination with the same identifier (name{figure.30}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.162 \]
+        ]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 204.
+ [30
+pdfTeX warning (ext4): destination with the same identifier (name{figure.31}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.241 ...ix} \sqrt{3} \\ 1 \end{bmatrix}\text{.}\]
+                                                  ]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 269.
+ [31] [32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.32}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.411 \]
+        ] [33
+pdfTeX warning (ext4): destination with the same identifier (name{figure.33}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.500 ... = \sum^{n}_{r=1} m_{i,r} \cdot q_{r,j}\]
+                                                  ] [34] [35] [36]) [37] (./Sections/05_SequencesAndSeries.tex [38
+pdfTeX warning (ext4): destination with the same identifier (name{figure.34}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.85 
+     ] [39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.35}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.141 \]
+        
+pdfTeX warning (ext4): destination with the same identifier (name{figure.36}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.141 \]
+        ]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 159.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 197.
+ [40]
+Overfull \hbox (2.49374pt too wide) in paragraph at lines 235--236
+[]\OT1/qpl/b/n/10 Theorem of mono-tone con-ver-gence. \OT1/qpl/m/n/10 A mono-tone se-quence con-verges if and only if it is bounded. 
+ []
+
+[41
+pdfTeX warning (ext4): destination with the same identifier (name{figure.37}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.278     \[u_n \leq v_n \leq w_n\text{.}\]
+                                           ] [42
+pdfTeX warning (ext4): destination with the same identifier (name{figure.38}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.359 \[1, 3, 6, 10, 15, 21, \cdots\]
+                                     ] [43]) [44] [45] (./Sections/06_DifferentialCalculus.tex [46
+pdfTeX warning (ext4): destination with the same identifier (name{figure.39}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.72 
+     ] [47
+pdfTeX warning (ext4): destination with the same identifier (name{figure.40}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.103 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.41}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.103 
+      ] [48] [49
+pdfTeX warning (ext4): destination with the same identifier (name{figure.42}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.187 ...(x) \reddiffarrow f'(x) + g'(x)\text{.}\]
+                                                  ]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 206.
+ [50] [51
+pdfTeX warning (ext4): destination with the same identifier (name{figure.43}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.320     \item A
+                  local minimum;] [52
+pdfTeX warning (ext4): destination with the same identifier (name{figure.44}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.381 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.45}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.381 
+      ] [53
+pdfTeX warning (ext4): destination with the same identifier (name{figure.46}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.431 \begin{itemize}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.47}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.431 \begin{itemize}
+                     ]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 467.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 477.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 493.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 505.
+ [54]
+Package mdframed Info: Not enough space on this page on input line 519.
+) [55] (./Sections/07_IntegralCalculus.tex [56
+pdfTeX warning (ext4): destination with the same identifier (name{figure.48}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.64 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.49}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.64 
+     ] [57] [58] [59] [60
+pdfTeX warning (ext4): destination with the same identifier (name{figure.50}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.303 \end{align*}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.51}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.303 \end{align*}
+                  ] [61] [62
+pdfTeX warning (ext4): destination with the same identifier (name{figure.52}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.406 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.53}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.406 
+      ] [63
+pdfTeX warning (ext4): destination with the same identifier (name{figure.54}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.468 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.55}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.468 
+      ] [64
+pdfTeX warning (ext4): destination with the same identifier (name{figure.56}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.525     \item I
+                 f \(\int_{a}^{t} f(x) \,dx\) exists for all \(t > a\), then...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.57}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.525     \item I
+                 f \(\int_{a}^{t} f(x) \,dx\) exists for all \(t > a\), then...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.58}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.525     \item I
+                 f \(\int_{a}^{t} f(x) \,dx\) exists for all \(t > a\), then...] [65
+pdfTeX warning (ext4): destination with the same identifier (name{figure.59}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.584 \end{align*}
+                  ]) [66
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.91 
+     ] [67
+pdfTeX warning (ext4): destination with the same identifier (name{figure.60}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \newpage
+             ] (./Sections/08_Polynomials.tex [68]
+<Images/PolynomialDivision.png, id=846, 243.91125pt x 247.92625pt>
 File: Images/PolynomialDivision.png Graphic file (type png)
 <use Images/PolynomialDivision.png>
 Package pdftex.def Info: Images/PolynomialDivision.png  used on input line 108.
 (pdftex.def)             Requested size: 133.07489pt x 135.26656pt.
- [3
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+ [69
+pdfTeX warning (ext4): destination with the same identifier (name{figure.61}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.119 F
-       or example, <./Images/PolynomialDivision.png>] [4] [5
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+       or example, <./Images/PolynomialDivision.png>] [70] [71
+pdfTeX warning (ext4): destination with the same identifier (name{figure.62}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.253 
       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.63}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.253 
-      ] [6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+      ] [72
+pdfTeX warning (ext4): destination with the same identifier (name{figure.64}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.297 
-      ] [7]) [8] (./main.aux)
+      ] [73]) [74] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DC0C0654E34C6CC23E9C20D84AD9FD4D;2032.
+(rerunfilecheck)             Checksum: 84B35A2DB168DC6F8C55DBDCC4CC8CE4;12771.
  ) 
 Here is how much of TeX's memory you used:
- 35836 strings out of 476025
- 832601 string characters out of 5790017
- 1867388 words of memory out of 5000000
- 55632 multiletter control sequences out of 15000+600000
- 554448 words of font info for 73 fonts, out of 8000000 for 9000
+ 42214 strings out of 476025
+ 962963 string characters out of 5790017
+ 1889388 words of memory out of 5000000
+ 61732 multiletter control sequences out of 15000+600000
+ 560058 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,80p,809b,712s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on main.pdf (8 pages, 329084 bytes).
+ 84i,19n,80p,905b,1067s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (74 pages, 863639 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1059 PDF objects out of 1200 (max. 8388607)
+ 916 compressed objects within 10 object streams
+ 277 named destinations out of 1000 (max. 500000)
+ 527 words of extra memory for PDF output out of 10000 (max. 10000000)
 
