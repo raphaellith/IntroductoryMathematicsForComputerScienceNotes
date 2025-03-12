@@ -1,15 +1,9 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Differential calculus}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}What is a derivative?}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Finding the derivative of a function}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}More on differentiability}{6}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Stationary points}{7}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Differential equations}{10}{subsection.1.5}%
-\contentsline {section}{\numberline {2}Integral calculus}{12}{section.2}%
-\contentsline {subsection}{\numberline {2.1}What is an indefinite integral?}{13}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Rules of integration}{13}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Integration by substitution}{14}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Integration by parts}{14}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}What is a definite integral?}{15}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Numerical methods for computing definite integrals}{17}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}What is an improper integral?}{19}{subsection.2.7}%
+\contentsline {section}{\numberline {1}Polynomials}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Polynomials are not functions}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Addition, multiplication and division of polynomials}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Roots of polynomials}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}On the real roots of polynomials of degree 2}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}On the complex roots of polynomials of degree 2}{6}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}On the roots of polynomials of arbitrary degree}{7}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}A theorem on real polynomials of odd degrees}{7}{subsection.1.7}%
