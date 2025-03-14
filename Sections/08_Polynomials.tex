@@ -367,7 +367,7 @@ To prove this, we can either use algebra or calculus.
 
     We assume \(z\) is a root of \(P\), which means that \((x - z)\) is a factor. Since \(z \notin \mathbb{R}\), we have \(z \neq \lambda_1,\; \lambda_2,\; \cdots,\; \lambda_m\). Hence, \((x - z)\) must be a factor of one of the quadratic factors, i.e. \((x^2 + a_j x + b_j)\) where \(1 \leq j \leq k\).
 
-    We know that the two roots of a quadratic polynomial are always complex conjugates. Therefore, \((x - \bar{z})\) is also a factor of \((x^2 + a_j x + b_j)\).
+    We know that the two roots of a quadratic polynomial are always complex conjugates (This was proved earlier using the quadratic formula.) Therefore, \((x - \bar{z})\) is also a factor of \((x^2 + a_j x + b_j)\).
 
     This means that \((x - \bar{z})\) is a factor of \(P\), so \(\bar{z}\) is a root of \(P\). This concludes the proof for the lemma.
 
@@ -377,11 +377,9 @@ To prove this, we can either use algebra or calculus.
     
     We write \(P\) as follows:
     %
-    \[P = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\]
+    \[P = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 \tag{\(a_n \neq 0\)}\]
     %
-    where \(n\) is odd and \(a_n \neq 0\). We will dissect the proof into two cases.
-
-    In the first case, we have \(a_n > 0\). Notice that as \(x\) approaches positive infinity, so does \(P\). This means that
+    where \(n\) is odd. WLOG assume that \(a_n > 0\). This means that as \(x\) approaches positive infinity, so does \(P\). Hence
     %
     \[\forall d > 0, \exists c > 0, x > c \implies P(x) > d\text{.}\]
     %
