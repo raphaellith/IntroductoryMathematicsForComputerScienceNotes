@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.23)  28 MAR 2025 20:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.23)  28 MAR 2025 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -925,27 +925,32 @@ File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \l__tikzsymbols_Summertree_nr_arguments_int=\count420
 \l__tikzsymbols_Autumntree_nr_arguments_int=\count421
 \l__tikzsymbols_Wintertree_nr_arguments_int=\count422
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count423
+\c@@ppsavesec=\count424
+\c@@ppsaveapp=\count425
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -981,36 +986,42 @@ LaTeX Font Info:    ... okay on input line 65.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 65.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 65.
+LaTeX Info: Redefining \celsius on input line 67.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 67.
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 65.
-Package gensymb Info: Using \Omega for \ohm on input line 65.
+LaTeX Info: Redefining \ohm on input line 67.
+Package gensymb Info: Using \Omega for \ohm on input line 67.
 
 Package gensymb Warning: Not defining \micro.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count423
+\scratchcounter=\count426
 \scratchdimen=\dimen409
 \scratchbox=\box82
-\nofMPsegments=\count424
-\nofMParguments=\count425
+\nofMPsegments=\count427
+\nofMParguments=\count428
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count426
+\MPscratchCnt=\count429
 \MPscratchDim=\dimen410
-\MPnumerator=\count427
-\makeMPintoPDFobject=\count428
+\MPnumerator=\count430
+\makeMPintoPDFobject=\count431
 \everyMPtoPDFconversion=\toks51
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 65.
+Package hyperref Info: Link coloring OFF on input line 67.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1018,11 +1029,11 @@ Package hyperref Info: Link coloring OFF on input line 65.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./main.toc [1
@@ -1059,7 +1070,7 @@ LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 17
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tex-gyre/ts1qpl.fd
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
 )
-<Images/CartesianCoordsOnCircle.png, id=510, 573.14125pt x 567.11874pt>
+<Images/CartesianCoordsOnCircle.png, id=516, 573.14125pt x 567.11874pt>
 File: Images/CartesianCoordsOnCircle.png Graphic file (type png)
 <use Images/CartesianCoordsOnCircle.png>
 Package pdftex.def Info: Images/CartesianCoordsOnCircle.png  used on input line 202.
@@ -1133,7 +1144,7 @@ l.447 \begin{equation}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.78 \newpage
+l.80 \newpage
              ] (./Sections/02_ContinuousFunctions.tex [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1197,12 +1208,12 @@ l.527 \begin{quote}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.81 \newpage
+l.83 \newpage
              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.81 \newpage
+l.83 \newpage
              ] (./Sections/03_VectorSpaces.tex [21] [22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1452,14 +1463,14 @@ l.584 \end{align*}
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.95 
+l.97 
      ] [68
 pdfTeX warning (ext4): destination with the same identifier (name{figure.60}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.96 \newpage
+l.98 \newpage
              ] (./Sections/08_Polynomials.tex [69]
-<Images/PolynomialDivision.png, id=996, 243.91125pt x 247.92625pt>
+<Images/PolynomialDivision.png, id=1002, 243.91125pt x 247.92625pt>
 File: Images/PolynomialDivision.png Graphic file (type png)
 <use Images/PolynomialDivision.png>
 Package pdftex.def Info: Images/PolynomialDivision.png  used on input line 108.
@@ -1523,7 +1534,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.68}) ha
                                                   \__shipout_drop_firstpage_...
 l.441 \[P(A \cap B) = P(A) \cdot P(B)\text{.}\]
                                                ] [83] [84]
-<Images/NormalDistribution.png, id=1114, 2569.6pt x 1642.135pt>
+<Images/NormalDistribution.png, id=1120, 2569.6pt x 1642.135pt>
 File: Images/NormalDistribution.png Graphic file (type png)
 <use Images/NormalDistribution.png>
 Package pdftex.def Info: Images/NormalDistribution.png  used on input line 573.
@@ -1532,7 +1543,7 @@ Package pdftex.def Info: Images/NormalDistribution.png  used on input line 573.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.69}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.102 \newpage
+l.104 \newpage
                <./Images/NormalDistribution.png>] (./Sections/10_Statistics.tex
 Package pgfplots info on input line 43: Overriding colorspace to rgb due to xcolor configuration.
  [86
@@ -1548,7 +1559,7 @@ l.69 \end{align*}
                  ] [87]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-<Images/NormalDistAndSDs.png, id=1138, 513.92pt x 509.905pt>
+<Images/NormalDistAndSDs.png, id=1143, 513.92pt x 509.905pt>
 File: Images/NormalDistAndSDs.png Graphic file (type png)
 <use Images/NormalDistAndSDs.png>
 Package pdftex.def Info: Images/NormalDistAndSDs.png  used on input line 184.
@@ -1640,23 +1651,26 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 657.
 
-) [95] (./main.aux)
+) [95] (./Sections/Appendix.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+[96]) [97] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A548D0345E9AED59164DA87E96739FED;18465.
+(rerunfilecheck)             Checksum: 0A0C9B7BAFDED73DA7ED118C3EE01AAC;18801.
  ) 
 Here is how much of TeX's memory you used:
- 45979 strings out of 476025
- 1050659 string characters out of 5790017
- 2049388 words of memory out of 5000000
- 65367 multiletter control sequences out of 15000+600000
- 572115 words of font info for 112 fonts, out of 8000000 for 9000
+ 46319 strings out of 476025
+ 1057468 string characters out of 5790017
+ 2051388 words of memory out of 5000000
+ 65694 multiletter control sequences out of 15000+600000
+ 580140 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,109p,905b,2063s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplbi.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (95 pages, 1237853 bytes).
+Output written on main.pdf (97 pages, 1251893 bytes).
 PDF statistics:
- 1399 PDF objects out of 1440 (max. 8388607)
- 1218 compressed objects within 13 object streams
- 372 named destinations out of 1000 (max. 500000)
- 769 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1414 PDF objects out of 1440 (max. 8388607)
+ 1231 compressed objects within 13 object streams
+ 375 named destinations out of 1000 (max. 500000)
+ 777 words of extra memory for PDF output out of 10000 (max. 10000000)
 

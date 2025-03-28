@@ -46,6 +46,8 @@
 
 \counterwithin*{equation}{section}
 
+\usepackage[page]{appendix}
+
 
 % Color scheme for TikZ diagrams:
 % MidnightBlue
@@ -101,5 +103,10 @@
 
 \newpage
 \input{Sections/10_Statistics.tex}
+
+\newpage
+\begin{appendices}
+    \input{Sections/Appendix.tex}
+\end{appendices}
 
 \end{document}
