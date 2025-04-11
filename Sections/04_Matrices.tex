@@ -90,17 +90,17 @@ It's important to take a moment to digest what this means. Several examples are 
 \right\}\text{.}
 \]
 
-We define \(f\) to be a linear map that scales the length of a vector by a factor of \(1.5\) and then rotates it by \(30\degree\). See figure \ref{fig:Ch04-example-1}.
+We define \(f\) to be a linear map that scales the length of a vector by a factor of \(2\) and then rotates it by \(30\degree\). See figure \ref{fig:Ch04-example-1}.
 
 We want to find the matrix \(M\) that represents this endomorphism.
 
 \begin{figure}[H]
     \centering
 
-    \begin{tikzpicture}[scale=0.5]
-        \draw[thin,gray!40] (-6,-6) grid (6, 6);
-        \draw[thick, ->, >=latex] (-6,0)--(6,0) node[right]{\(x\)};
-        \draw[thick, ->, >=latex] (0,-6)--(0,6) node[above]{\(y\)};
+    \begin{tikzpicture}[scale=0.4]
+        \draw[thin,gray!40] (-8,-8) grid (8, 8);
+        \draw[thick, ->, >=latex] (-8,0)--(8,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-8)--(0,8) node[above]{\(y\)};
         \draw (0, 0) node[below left] {0};
         
         \foreach \x in {-3,...,3} {
@@ -110,20 +110,20 @@ We want to find the matrix \(M\) that represents this endomorphism.
         }
     \end{tikzpicture}
 
-    \begin{tikzpicture}[scale=0.5]
-        \draw[thin,gray!40] (-6,-6) grid (6, 6);
-        \draw[thick, ->, >=latex] (-6,0)--(6,0) node[right]{\(x\)};
-        \draw[thick, ->, >=latex] (0,-6)--(0,6) node[above]{\(y\)};
+    \begin{tikzpicture}[scale=0.4]
+        \draw[thin,gray!40] (-8,-8) grid (8, 8);
+        \draw[thick, ->, >=latex] (-8,0)--(8,0) node[right]{\(x\)};
+        \draw[thick, ->, >=latex] (0,-8)--(0,8) node[above]{\(y\)};
         \draw (0, 0) node[below left] {0};
         
         \foreach \x in {-3,...,3} {
             \foreach \y in {-3,...,3} {
-                \draw[line width=1.5pt, Fuchsia, -stealth, draw opacity=0.3] (0,0) -- ($1.5*({cos(30) * \x + cos(120) * \y}, {sin(30) * \x + sin(120) * \y})$);
+                \draw[line width=1.5pt, Fuchsia, -stealth, draw opacity=0.3] (0,0) -- ($2*({cos(30) * \x + cos(120) * \y}, {sin(30) * \x + sin(120) * \y})$);
             }
         }
     \end{tikzpicture}
     
-    \caption{The linear map \(f\) takes a vector (in orange) and scales it by a factor of \(1.5\) before rotating it by \(30\degree\) anticlockwise. This results in a new vector (in purple).}
+    \caption{The linear map \(f\) takes a vector (in orange) and scales it by a factor of \(2\) before rotating it by \(30\degree\) anticlockwise. This results in a new vector (in purple).}
     \label{fig:Ch04-example-1}
 \end{figure}
 
@@ -202,7 +202,7 @@ to get our answer. This is verified in figure \ref{fig:Ch04-example-1-verificati
 
 \vspace{15pt}
 \begin{mdframed}[linewidth=1pt]
-\noindent \textbf{Setup.} Like the previous example, we set both \(U\) and \(V\) to \(\mathbb{R}^2\), and we want to find a matrix \(M\) that corresponds to a linear map \(f\) where vectors are scaled 1.5 times and rotated by \(30\degree\) anticlockwise.
+\noindent \textbf{Setup.} Like the previous example, we set both \(U\) and \(V\) to \(\mathbb{R}^2\), and we want to find a matrix \(M\) that corresponds to a linear map \(f\) where vectors are scaled \(2\) times and rotated by \(30\degree\) anticlockwise.
 
 Only this time, we will use the canonical basis for the vector space \(U\):
 %
