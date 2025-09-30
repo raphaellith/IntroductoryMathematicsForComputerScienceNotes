@@ -1,3 +1,4 @@
-# Introductory-Mathematics-for-Computer-Science
+# Introductory Mathematics for Computer Science
 
-Notes for the module _Introductory Mathematics for Computer Science_ (COMP0011). This module was taught in Year 1, Term 2.
+> - Module: COMP0011 - Introductory Mathematics for Computer Science
+> - Project description: Notes
