@@ -1,0 +1,94 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Complex numbers}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Basic arithmetic with complex numbers, and complex conjugates}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Visualising complex numbers}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Exponential form}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Converting between Cartesian and exponential forms}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Visualising arithmetic on complex numbers}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Roots of unity}{8}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Continuous functions}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Trigonometric functions}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Exponential and logarithm}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Introduction to limits}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Handling infinities and indeterminate forms}{17}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Little o and big O notation}{17}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Continuity}{19}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Vector spaces}{21}{section.3}%
+\contentsline {subsection}{\numberline {3.1}What is a vector space?}{21}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Examples of vector spaces}{22}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Collinearity, span and subspaces}{23}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Linear independence}{24}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Basis}{25}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Linear maps}{26}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Kernel and image}{28}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Matrices}{29}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Expressing linear maps as matrices}{29}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Example 1: An endomorphism with unchanged bases}{29}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Example 2: An endomorphism with changed bases}{31}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Example 3: Non-endomorphism}{32}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Kernels and images}{33}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}The elements of a matrix}{34}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Matrix arithmetic}{34}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}The inverse of a matrix}{35}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}How to invert a matrix}{35}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Determinants}{37}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Sequences and series}{39}{section.5}%
+\contentsline {subsection}{\numberline {5.1}What is a sequence?}{39}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Arithmetic, geometric, monotone, bounded and recursive sequences}{39}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Convergence of a sequence}{41}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Asymptotic behaviour of sequences}{42}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Important thereoms about sequences and their limits}{42}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}What is a series?}{43}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Convergence of a series}{44}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Differential calculus}{47}{section.6}%
+\contentsline {subsection}{\numberline {6.1}What is a derivative?}{47}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Finding the derivative of a function}{49}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}More on differentiability}{51}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Stationary points}{52}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Differential equations}{55}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Integral calculus}{57}{section.7}%
+\contentsline {subsection}{\numberline {7.1}What is an indefinite integral?}{58}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Rules of integration}{58}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Integration by substitution}{59}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Integration by parts}{59}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}What is a definite integral?}{60}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Numerical methods for computing definite integrals}{62}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}What is an improper integral?}{64}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Polynomials}{69}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Polynomials are not functions}{69}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Addition, multiplication and division of polynomials}{69}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Roots of polynomials}{71}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}On the real roots of polynomials of degree 2}{72}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}On the complex roots of polynomials of degree 2}{73}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}On the roots of polynomials of arbitrary degree}{74}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}A theorem on real polynomials of odd degrees}{74}{subsection.8.7}%
+\contentsline {section}{\numberline {9}Probability}{76}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Probability laws}{76}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Discrete and continuous probabilities}{77}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Discrete probabilities in countable sample spaces}{77}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Continuous probabilities in uncountable sample spaces}{78}{subsubsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.3}Conditional probabilities}{78}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Law of total probability}{79}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bayes' theorem}{81}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}Independent events}{83}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}What are random variables?}{83}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Bernoulli random variables}{83}{subsubsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.2}Binomial random variables}{83}{subsubsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.5}Expected value}{84}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Variance and standard deviation}{84}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Normal distribution}{84}{subsection.9.7}%
+\contentsline {section}{\numberline {10}Statistics}{86}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Mean, median, standard deviation and standard score}{87}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Mean}{87}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}Median}{87}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}Standard deviation}{87}{subsubsection.10.1.3}%
+\contentsline {subsubsection}{\numberline {10.1.4}\textit {Z}-value (Standard score)}{87}{subsubsection.10.1.4}%
+\contentsline {subsection}{\numberline {10.2}Normal distribution}{88}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Standardising a normal distribution}{89}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Sampling and confidence intervals}{91}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.1}What is sampling?}{91}{subsubsection.10.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.2}What is a confidence interval?}{92}{subsubsection.10.4.2}%
+\contentsline {subsubsection}{\numberline {10.4.3}How to compute confidence intervals}{92}{subsubsection.10.4.3}%
+\contentsline {subsubsection}{\numberline {10.4.4}Derivation of the confidence interval formula}{93}{subsubsection.10.4.4}%
+\contentsline {subsection}{\numberline {10.5}Hypothesis testing}{94}{subsection.10.5}%
+\contentsline {section}{\numberline {A}A brief note on using \textit {New Cambridge Staistical Tables}}{96}{appendix.1.A}%
